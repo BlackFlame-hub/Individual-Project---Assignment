@@ -1,0 +1,455 @@
+@font-face {
+  font-family: "JosefineBold";
+  src: url(../assets/Fonts/Josefine/JosefinSans-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "JosefineRegular";
+  src: url(../assets/Fonts/Josefine/JosefinSans-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Aleo400";
+  src: url(../assets/Fonts/Aleo/Aleo-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin btn_style {
+  font-family: "Aleo400", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 1.2px;
+  background-color: #5474fd;
+  color: white;
+  width: 230px;
+  height: 65px;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: darken(#1b36ad, 10%);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    background-color: lighten(#5c6cb6, 5%);
+    transform: translateY(0);
+  }
+}
+
+.btn-primary {
+  @include btn_style;
+}
+
+// HEADER ==================================================================
+
+.header-bg {
+  background-image: url(../assets/svg/bgheader.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 880px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+
+  .hp-josefine_bold {
+    font-family: "JosefineBold", sans-serif;
+    font-size: 48px;
+    line-height: 26px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+  }
+
+  .hp-josefine_regular {
+    font-family: "JosefineRegular", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 7px;
+    margin-bottom: 50px;
+  }
+
+  .hp-josefine_regular_sm {
+    font-family: "JosefineRegular", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 100px;
+    letter-spacing: 3px;
+  }
+}
+
+.searchbar_local {
+  width: 35vw;
+
+  border: solid 2px white;
+  padding: 0px;
+
+  .form-control {
+    border-radius: 0px;
+    height: 63px;
+  }
+
+  ::placeholder {
+    font-family: "JosefineRegular", sans-serif;
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 3px;
+  }
+
+  .btn-settings {
+    color: white;
+    background-color: #5474fd;
+    padding: 0 23px 0;
+    font-family: "Aleo400", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+    padding-left: 30px;
+
+    .mgn-gls_position {
+      padding: 0 12px 0;
+      transform: scale(1.3);
+    }
+
+    &:hover {
+      background-color: darken(#2e47b4, 10%);
+    }
+
+    &:active {
+      background-color: lighten(#2aaf4b, 10%);
+    }
+  }
+}
+
+.scroll-arrow {
+  margin-top: -25px;
+  transform: scale(1.3);
+}
+
+.scroll_button:hover {
+  transition: all 0.4s ease-out;
+  transform: scale(1.2);
+  cursor: pointer;
+
+  .scroll-arrow {
+    margin-top: -10px;
+    transition: all 0.3s ease-in;
+    transform: scale(1.7);
+  }
+}
+
+.logo {
+  font-family: "JosefineBold", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 2.4px;
+  margin-left: 70px;
+}
+
+.navbar_local {
+  width: 100%;
+  height: 83px;
+  background-color: #5474fd;
+  margin-top: -15px;
+
+  .nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding-top: 13px;
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-family: "Aleo400", sans-serif;
+      font-size: 14px;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// MAIN ==================================================================
+
+.choose-us {
+  background-image: url(../assets/svg/choose-section/choosebg.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  gap: 210px;
+
+  article {
+    margin-left: 340px;
+
+    h1 {
+      font-family: "Aleo400", sans-serif;
+      color: white;
+      font-size: 36px;
+      line-height: 26px;
+    }
+
+    p {
+      font-family: "JosefineRegular", sans-serif;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 1.6px;
+      color: white;
+      margin-top: 50px;
+      margin-bottom: 45px;
+      width: 560px;
+      height: 160px;
+    }
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: visible;
+
+    img {
+      transform: scale(1.2);
+    }
+
+    img:nth-of-type(1) {
+      margin-top: -250px;
+    }
+
+    img:nth-of-type(2) {
+      position: absolute;
+      top: 30px;
+      left: 90px;
+      width: 350px;
+      height: 220px;
+    }
+  }
+}
+
+.places {
+  background-color: #333333;
+  width: 100%;
+  height: 320px;
+
+  .places-curve {
+    position: absolute;
+    margin-top: 50px;
+    left: 29.4%;
+    transform: scale(0.9);
+  }
+
+  .places-guide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+    div {
+      margin-top: 100px;
+      display: grid;
+      place-items: center;
+    }
+
+    img {
+      background-color: #333333;
+      padding: 5px;
+      margin-bottom: 35px;
+    }
+
+    h1 {
+      color: white;
+      font-family: "Aleo400", sans-serif;
+      size: 36px;
+      line-height: 26px;
+    }
+  }
+}
+
+.spain-madrid {
+  background-image: url(../assets/svg/housespain.svg);
+  background-size: cover;
+  width: 100%;
+  height: 750px;
+  padding: 230px 0 0 330px;
+
+  .spain-description_container {
+    height: 380px;
+    width: 550px;
+    background-color: rgba(36, 36, 36, 0.9);
+    padding: 50px 30px;
+    color: white;
+  }
+
+  h4 {
+    font-family: "JosefineRegular", sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-family: "JosefineRegular", sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-family: "JosefineRegular", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 45px;
+  }
+}
+
+.spain-grand {
+  background-image: url(../assets/svg/spainocean.svg);
+  background-size: cover;
+  width: 100%;
+  height: 750px;
+  padding: 230px 0 0 1000px;
+
+  .spain-description_container {
+    height: 380px;
+    width: 550px;
+    background-color: rgba(36, 36, 36, 0.9);
+    padding: 50px 30px;
+    color: white;
+  }
+
+  h4 {
+    font-family: "JosefineRegular", sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-family: "JosefineRegular", sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-family: "JosefineRegular", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 45px;
+  }
+}
+
+.tourist-feedback {
+  background-image: url(../assets/svg/touristfeedback.svg);
+  background-size: cover;
+  width: 100%;
+  height: 750px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    margin: 120px 0 90px 0;
+    color: white;
+    font-family: "Aleo400", sans-serif;
+    font-size: 36px;
+    line-height: 26px;
+  }
+
+  .tourist-feedback_content {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  article {
+    background-color: #333333;
+    width: 700px;
+    height: 284px;
+    color: white;
+    padding: 50px 25px 40px 60px;
+
+    h4 {
+      margin-bottom: 10px;
+      font-family: "JosefineRegular", sans-serif;
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    p {
+      font-family: "JosefineRegular", sans-serif;
+      font-size: 16px;
+      line-height: 26px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -2px;
+        width: 24px;
+        height: 24px;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="%235474FD" d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>')
+          no-repeat center center;
+        background-size: calc(100% + 2px) calc(100% + 2px);
+      }
+    }
+  }
+}
+
+// FOOTER ==================================================================
+
+.footer_container {
+  background-color: #232323;
+  width: 100%;
+  height: 285px;
+  display: grid;
+  place-items: center;
+  color: white;
+
+  h1 {
+    font-family: "JosefineBold", sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 3.4px;
+    margin-top: 90px;
+  }
+
+  p {
+    font-family: "JosefineRegular", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+    margin-top: -30px;
+  }
+
+  section {
+    transform: scale(1.5);
+    padding-bottom: 30px;
+    display: flex;
+    gap: 15px;
+  }
+}
