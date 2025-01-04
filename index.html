@@ -15,13 +15,15 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <script src="./assets/_script/script.js" defer></script>
+
     <link rel="stylesheet" href="./css/style.css" />
     <title>BHROMAON</title>
   </head>
 
   <body>
     <header>
-      <div class="header-bg">
+      <section class="header-bg">
         <div class="header-content">
           <h1 class="hp-josefine_bold">BHROMAON</h1>
           <p class="hp-josefine_regular">Safe Travel Anywhere</p>
@@ -48,40 +50,64 @@
           </div>
 
           <section class="scroll_button">
-            <p class="hp-josefine_regular_sm">Scroll Down</p>
-            <img
-              class="scroll-arrow"
-              src="./assets/svg/scrolldown-arrow.svg"
-              alt="Scroll arrow"
-            />
+            <a href="#scroll_target">
+              <p class="hp-josefine_regular_sm">Scroll Down</p>
+              <img
+                class="scroll-arrow"
+                src="./assets/svg/scrolldown-arrow.svg"
+                alt="Scroll arrow"
+              />
+            </a>
           </section>
         </div>
-      </div>
+      </section>
 
       <nav class="navbar_local">
         <div class="nav-container">
           <a href="#" class="logo">BHROMAON</a>
+
+          <img
+            id="burgermenu"
+            src="./assets/svg/burgermenu.svg"
+            alt="Burger menu"
+          />
+
           <ul class="nav-links">
             <li><a href="#who-we-are">Who We Are</a></li>
             <li><a href="#what-we-do">What We Do</a></li>
             <li><a href="#travel-with-us">Travel With Us</a></li>
             <li><a href="#contact-us">Contact Us</a></li>
           </ul>
+
+          <img
+            id="burgercross"
+            src="./assets/svg/burgercross.svg"
+            alt="Burger close"
+          />
+
+          <div class="nav-links_burger">
+            <ul>
+              <li><a href="#who-we-are">Who We Are</a></li>
+              <li><a href="#what-we-do">What We Do</a></li>
+              <li><a href="#travel-with-us">Travel With Us</a></li>
+              <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="choose-us">
+      <section id="scroll_target" class="choose-us">
         <article>
           <h1>Why Choose Us</h1>
           <p>
-            Tion and dislike men who are so beguiled and demoralized by desire
-            by the charms of pleasure of the moment, so blinded by desire, that
-            they cannot foresee. <br />
+            &nbsp;Tion and dislike men who are so beguiled and demoralized by
+            desire by the charms of pleasure of the moment, so blinded by
+            desire, that they cannot foresee. <br />
             <br />
-            Dislike men who are so beguiled and demoralized by the charms of
-            pleasure of the moment, so blinded by desire, that.
+            &nbsp;Dislike men who are so beguiled and demoralized by the charms
+            of pleasure of the moment, so blinded by desire, that.
           </p>
           <button class="btn-primary">EXPLORE PLACES</button>
         </article>
@@ -128,14 +154,15 @@
           </div>
         </section>
       </section>
+
       <section class="spain-madrid">
         <article class="spain-description_container">
           <h4>Spain</h4>
           <h1>GRAND SPAIN MADRID</h1>
           <p>
-            But I must explain to you how all this mistaken idea of account to
-            denouncing pleasure and praising pain was account born and I account
-            will give you a complete account of the system
+            &nbsp;But I must explain to you how all this mistaken idea of
+            account to denouncing pleasure and praising pain was account born
+            and I account will give you a complete account of the system
           </p>
           <button class="btn-primary">BOOK NOW</button>
         </article>
@@ -146,9 +173,9 @@
           <h4>Spain</h4>
           <h1>GRAND SPAIN MADRID</h1>
           <p>
-            But I must explain to you how all this mistaken idea of account to
-            denouncing pleasure and praising pain was account born and I account
-            will give you a complete account of the system
+            &nbsp;But I must explain to you how all this mistaken idea of
+            account to denouncing pleasure and praising pain was account born
+            and I account will give you a complete account of the system
           </p>
           <button class="btn-primary">BOOK NOW</button>
         </article>
