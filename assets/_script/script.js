@@ -16,4 +16,16 @@ document.addEventListener("DOMContentLoaded", () => {
     burgerMenu.style.display = "block";
     burgerCross.style.display = "none";
   });
+
+  burgerMenu.addEventListener("touchstart", () => {
+    navLinksBurger.style.display = "block";
+    burgerMenu.style.display = "none";
+    burgerCross.style.display = "block";
+  });
+
+  burgerCross.addEventListener("touchstart", () => {
+    navLinksBurger.style.display = "none";
+    burgerMenu.style.display = "block";
+    burgerCross.style.display = "none";
+  });
 });
