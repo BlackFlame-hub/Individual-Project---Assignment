@@ -1,3 +1,9 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 @font-face {
   font-family: "JosefineBold";
   src: url(../assets/Fonts/Josefine/JosefinSans-Bold.ttf);
@@ -151,10 +157,14 @@
 
 #burgermenu {
   display: none;
+  border: none;
+  background-color: transparent;
 }
 
 #burgercross {
   display: none;
+  border: none;
+  background-color: transparent;
 }
 
 .nav-links_burger {
@@ -523,15 +533,23 @@
   }
   .navbar_local #burgermenu {
     display: block;
-    transform: scale(0.1);
-    margin-left: -23vw;
     cursor: pointer;
+    background-color: transparent;
+    background-image: url(../assets/svg/burgermenu.svg);
+    background-repeat: no-repeat;
+    transform: scale(2.5);
+    margin-top: 3vh;
+    border: none;
   }
   .navbar_local #burgercross {
     display: none;
     z-index: 999;
-    transform: scale(0.08);
-    margin-left: -23vw;
+    background-color: transparent;
+    background-image: url(../assets/svg/burgercross.svg);
+    background-repeat: no-repeat;
+    transform: scale(2.5);
+    margin-top: 3vh;
+    border: none;
     cursor: pointer;
   }
   .navbar_local .nav-container {
@@ -557,6 +575,22 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 8vh;
+  }
+  .navbar_local .nav-links_burger ul > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .navbar_local .nav-links_burger ul > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .navbar_local .nav-links_burger ul > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .navbar_local .nav-links_burger ul > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
   }
   .navbar_local .nav-links_burger li {
     list-style: none;
@@ -653,7 +687,7 @@
   }
   .spain-madrid .spain-description_container .btn-primary,
   .spain-grand .spain-description_container .btn-primary {
-    margin-top: 20vw;
+    margin-top: 8vw;
   }
   .tourist-feedback {
     height: 102h;
