@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 @font-face {
   font-family: "JosefineBold";
   src: url(../assets/Fonts/Josefine/JosefinSans-Bold.ttf);
@@ -39,24 +32,15 @@
   display: inline-block;
   text-align: center;
   cursor: pointer;
-  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.2s ease;
-  transition: background-color 0.3s ease, -webkit-transform 0.2s ease;
-  -o-transition: background-color 0.3s ease, transform 0.2s ease;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  transition: background-color 0.3s ease, transform 0.2s ease,
-    -webkit-transform 0.2s ease;
 
   &:hover {
     background-color: darken(#1b36ad, 10%);
-    -webkit-transform: translateY(-2px);
-    -ms-transform: translateY(-2px);
     transform: translateY(-2px);
   }
 
   &:active {
     background-color: lighten(#5c6cb6, 5%);
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
     transform: translateY(0);
   }
 }
@@ -79,14 +63,8 @@
   background-size: 100%;
   height: 880px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
   color: white;
@@ -127,38 +105,6 @@
     height: 63px;
   }
 
-  ::-webkit-input-placeholder {
-    font-family: "JosefineRegular", sans-serif;
-    text-align: center;
-    font-size: 14px;
-    line-height: 26px;
-    letter-spacing: 3px;
-  }
-
-  ::-moz-placeholder {
-    font-family: "JosefineRegular", sans-serif;
-    text-align: center;
-    font-size: 14px;
-    line-height: 26px;
-    letter-spacing: 3px;
-  }
-
-  :-ms-input-placeholder {
-    font-family: "JosefineRegular", sans-serif;
-    text-align: center;
-    font-size: 14px;
-    line-height: 26px;
-    letter-spacing: 3px;
-  }
-
-  ::-ms-input-placeholder {
-    font-family: "JosefineRegular", sans-serif;
-    text-align: center;
-    font-size: 14px;
-    line-height: 26px;
-    letter-spacing: 3px;
-  }
-
   ::placeholder {
     font-family: "JosefineRegular", sans-serif;
     text-align: center;
@@ -179,8 +125,6 @@
 
     .mgn-gls_position {
       padding: 0 12px 0;
-      -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
       transform: scale(1.3);
     }
 
@@ -196,8 +140,6 @@
 
 .scroll-arrow {
   margin-top: -25px;
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
   transform: scale(1.3);
 }
 
@@ -209,21 +151,13 @@
 }
 
 .scroll_button:hover {
-  -webkit-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
   transform: scale(1.2);
   cursor: pointer;
 
   .scroll-arrow {
     margin-top: -10px;
-    -webkit-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
-    -webkit-transform: scale(1.7);
-    -ms-transform: scale(1.7);
     transform: scale(1.7);
   }
 }
@@ -255,21 +189,14 @@
   margin-top: -15px;
 
   .nav-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     height: 100%;
   }
 
   .nav-links {
     list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 50px;
     padding-top: 13px;
@@ -293,11 +220,7 @@
   width: 100%;
   height: 750px;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   gap: 210px;
 
@@ -325,19 +248,12 @@
   }
 
   aside {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     position: relative;
     overflow: visible;
 
     img {
-      -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
       transform: scale(1.2);
     }
 
@@ -364,24 +280,17 @@
     position: absolute;
     margin-top: 50px;
     left: 29.4%;
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
     transform: scale(0.9);
   }
 
   .places-guide {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     gap: 100px;
 
     div {
       margin-top: 100px;
-      display: -ms-grid;
       display: grid;
       place-items: center;
     }
@@ -482,15 +391,8 @@
   background-size: cover;
   width: 100%;
   height: 750px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 
   h1 {
@@ -502,11 +404,7 @@
   }
 
   .tourist-feedback_content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
     align-items: flex-start;
   }
 
@@ -551,7 +449,6 @@
   background-color: #232323;
   width: 100%;
   height: 285px;
-  display: -ms-grid;
   display: grid;
   place-items: center;
   color: white;
@@ -573,12 +470,8 @@
   }
 
   section {
-    -webkit-transform: scale(1.5);
-    -ms-transform: scale(1.5);
     transform: scale(1.5);
     padding-bottom: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 15px;
   }
@@ -625,12 +518,7 @@
       height: auto;
 
       .input-group {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
         flex-direction: column;
 
         .form-control {
@@ -639,30 +527,6 @@
 
         input {
           padding-left: 1.6vw;
-
-          ::-webkit-input-placeholder {
-            font-size: 0.7rem;
-            line-height: 0;
-            letter-spacing: 0px;
-          }
-
-          ::-moz-placeholder {
-            font-size: 0.7rem;
-            line-height: 0;
-            letter-spacing: 0px;
-          }
-
-          :-ms-input-placeholder {
-            font-size: 0.7rem;
-            line-height: 0;
-            letter-spacing: 0px;
-          }
-
-          ::-ms-input-placeholder {
-            font-size: 0.7rem;
-            line-height: 0;
-            letter-spacing: 0px;
-          }
 
           ::placeholder {
             font-size: 0.7rem;
@@ -690,56 +554,26 @@
 
         img {
           margin-top: 0.7vh;
-          -webkit-animation: ScrollArrowAnimation 3s ease-in-out infinite;
           animation: ScrollArrowAnimation 3s ease-in-out infinite;
-        }
-      }
-
-      @-webkit-keyframes ScrollArrowAnimation {
-        0% {
-          -webkit-transform: scale(2.1) translateY(0);
-          transform: scale(2.1) translateY(0);
-          opacity: 0.5;
-        }
-        50% {
-          -webkit-transform: scale(3.5) translateY(1.1vh);
-          transform: scale(3.5) translateY(1.1vh);
-          opacity: 1;
-        }
-
-        70% {
-          -webkit-transform: scale(2.85) translateY(1.1vh);
-          transform: scale(2.85) translateY(1.1vh);
-          opacity: 1;
-        }
-
-        100% {
-          -webkit-transform: scale(1.95) translateY(0);
-          transform: scale(1.95) translateY(0);
-          opacity: 0.5;
         }
       }
 
       @keyframes ScrollArrowAnimation {
         0% {
-          -webkit-transform: scale(2.1) translateY(0);
           transform: scale(2.1) translateY(0);
           opacity: 0.5;
         }
         50% {
-          -webkit-transform: scale(3.5) translateY(1.1vh);
           transform: scale(3.5) translateY(1.1vh);
           opacity: 1;
         }
 
         70% {
-          -webkit-transform: scale(2.85) translateY(1.1vh);
           transform: scale(2.85) translateY(1.1vh);
           opacity: 1;
         }
 
         100% {
-          -webkit-transform: scale(1.95) translateY(0);
           transform: scale(1.95) translateY(0);
           opacity: 0.5;
         }
@@ -769,8 +603,6 @@
       background-color: transparent;
       background-image: url(../assets/svg/burgermenu.svg);
       background-repeat: no-repeat;
-      -webkit-transform: scale(2.5);
-      -ms-transform: scale(2.5);
       transform: scale(2.5);
       margin-top: 3vh;
       border: none;
@@ -782,8 +614,6 @@
       background-color: transparent;
       background-image: url(../assets/svg/burgercross.svg);
       background-repeat: no-repeat;
-      -webkit-transform: scale(2.5);
-      -ms-transform: scale(2.5);
       transform: scale(2.5);
       margin-top: 3vh;
       border: none;
@@ -800,7 +630,6 @@
     }
 
     .nav-links_burger {
-      background: -o-linear-gradient(72deg, #5782fa, #1e32a5ec);
       background: linear-gradient(18deg, #5782fa, #1e32a5ec);
       height: 85vh;
       width: 100vw;
@@ -813,33 +642,10 @@
 
       ul {
         margin-top: 26vh;
-        display: -ms-grid;
         display: grid;
-        -ms-grid-columns: 1fr 8vh 1fr;
         grid-template-columns: 1fr 1fr;
-        -ms-grid-rows: 1fr 8vh 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 8vh;
-      }
-
-      ul > *:nth-child(1) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;
-      }
-
-      ul > *:nth-child(2) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 3;
-      }
-
-      ul > *:nth-child(3) {
-        -ms-grid-row: 3;
-        -ms-grid-column: 1;
-      }
-
-      ul > *:nth-child(4) {
-        -ms-grid-row: 3;
-        -ms-grid-column: 3;
       }
 
       li {
@@ -850,7 +656,6 @@
           text-decoration: none;
           font-size: 1.2rem;
           line-height: 10vh;
-          -webkit-box-shadow: 0 0 20vw 1vh rgba(39, 68, 153, 0.336);
           box-shadow: 0 0 20vw 1vh rgba(39, 68, 153, 0.336);
           background-color: none;
         }
@@ -870,15 +675,8 @@
     background-position: 15% 182%;
     background-size: 500%;
     background-repeat: repeat;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
     align-items: flex-start;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     overflow: hidden;
 
@@ -911,21 +709,13 @@
       img:nth-of-type(1) {
         margin-top: 0;
         margin-left: 2vw;
-        -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
         transform: scale(0.9);
-        -webkit-transform-origin: bottom left;
-        -ms-transform-origin: bottom left;
         transform-origin: bottom left;
       }
 
       img:nth-of-type(2) {
         position: static;
-        -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
         transform: scale(0.9);
-        -webkit-transform-origin: 100% 0%;
-        -ms-transform-origin: 100% 0%;
         transform-origin: 100% 0%;
       }
     }
@@ -935,16 +725,12 @@
     height: 70vw;
 
     .places-curve {
-      -webkit-transform: scale(0.31);
-      -ms-transform: scale(0.31);
       transform: scale(0.31);
       margin-top: 1vw;
       left: -57%;
     }
 
     .places-guide {
-      -webkit-transform: scale(0.67);
-      -ms-transform: scale(0.67);
       transform: scale(0.67);
       gap: 25vw;
 
@@ -961,7 +747,6 @@
   .spain-grand {
     height: 102vh;
     padding: 0;
-    display: -ms-grid;
     display: grid;
     place-items: center;
     overflow: hidden;
@@ -984,7 +769,6 @@
   .tourist-feedback {
     height: 102h;
     padding: 0;
-    display: -ms-grid;
     display: grid;
     place-items: center;
     background-position: 20% 0%;
@@ -994,12 +778,7 @@
       font-size: 1.5rem;
     }
     .tourist-feedback_content {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
       flex-direction: column;
 
       img {
