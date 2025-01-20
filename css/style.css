@@ -150,10 +150,14 @@
 }
 
 #burgermenu {
+  display: none;
+  border: none;
   background-color: transparent;
 }
 
 #burgercross {
+  display: none;
+  border: none;
   background-color: transparent;
 }
 
@@ -423,6 +427,7 @@
   html {
     scroll-behavior: smooth;
     width: 100vw;
+    height: 100%;
   }
   .header-bg {
     height: 100vh;
@@ -541,11 +546,11 @@
     background: linear-gradient(18deg, #5782fa, rgba(30, 50, 165, 0.9254901961));
     height: 85vh;
     width: 100vw;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
     padding: 2vw;
-    display: none;
   }
   .navbar_local .nav-links_burger ul {
     margin-top: 26vh;
