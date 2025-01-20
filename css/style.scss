@@ -615,19 +615,11 @@
       z-index: 999;
     }
 
-    .nav-container {
-      // cursor: pointer;
-    }
-
-    // .nav-links_burger.active {
-    //   display: block;
-    // }
-
     .nav-links_burger {
       background: linear-gradient(18deg, #5782fa, #1e32a5ec);
       height: 85vh;
       width: 100vw;
-      position: fixed;
+      // position: fixed;
       top: 0;
       left: 0;
       z-index: 999;

@@ -541,7 +541,6 @@
     background: linear-gradient(18deg, #5782fa, rgba(30, 50, 165, 0.9254901961));
     height: 85vh;
     width: 100vw;
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
