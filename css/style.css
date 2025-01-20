@@ -150,14 +150,10 @@
 }
 
 #burgermenu {
-  display: none;
-  border: none;
   background-color: transparent;
 }
 
 #burgercross {
-  display: none;
-  border: none;
   background-color: transparent;
 }
 
@@ -531,7 +527,6 @@
     background-repeat: no-repeat;
     width: 10vw;
     height: 10vw;
-    border: none;
     z-index: 999;
   }
   .navbar_local #burgercross {
@@ -540,7 +535,6 @@
     background-repeat: no-repeat;
     width: 10vw;
     height: 10vw;
-    border: none;
     z-index: 999;
   }
   .navbar_local .nav-container {
