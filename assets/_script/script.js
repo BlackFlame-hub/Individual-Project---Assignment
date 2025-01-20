@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const burgerCross = document.getElementById("burgercross");
   const navLinksBurger = document.querySelector(".nav-links_burger");
 
-  burgerCross.style.display = "none";
+  // burgerCross.style.display = "none";
 
   burgerMenu.addEventListener("click", () => {
     navLinksBurger.style.display = "block";
