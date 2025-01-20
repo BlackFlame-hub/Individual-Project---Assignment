@@ -537,9 +537,6 @@
     height: 10vw;
     z-index: 999;
   }
-  .navbar_local .nav-links_burger.active {
-    display: block;
-  }
   .navbar_local .nav-links_burger {
     background: linear-gradient(18deg, #5782fa, rgba(30, 50, 165, 0.9254901961));
     height: 85vh;
@@ -571,6 +568,9 @@
   }
   .navbar_local .hidden {
     display: none;
+  }
+  .navbar_local .active {
+    display: block;
   }
   .choose-us {
     height: 140vh;

@@ -619,9 +619,9 @@
       // cursor: pointer;
     }
 
-    .nav-links_burger.active {
-      display: block;
-    }
+    // .nav-links_burger.active {
+    //   display: block;
+    // }
 
     .nav-links_burger {
       background: linear-gradient(18deg, #5782fa, #1e32a5ec);
@@ -657,6 +657,10 @@
     }
     .hidden {
       display: none;
+    }
+
+    .active {
+      display: block;
     }
   }
 
