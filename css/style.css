@@ -528,21 +528,19 @@
   .navbar_local #burgermenu {
     display: block;
     cursor: pointer;
-    background-color: transparent;
     background-image: url(../assets/svg/burgermenu.svg);
     background-repeat: no-repeat;
-    transform: scale(2.5);
-    margin-top: 3vh;
+    width: 10vw;
+    height: 10vw;
     border: none;
   }
   .navbar_local #burgercross {
     display: none;
-    z-index: 999;
-    background-color: transparent;
+    cursor: pointer;
     background-image: url(../assets/svg/burgercross.svg);
     background-repeat: no-repeat;
-    transform: scale(2.5);
-    margin-top: 3vh;
+    width: 10vw;
+    height: 10vw;
     border: none;
     cursor: pointer;
   }
