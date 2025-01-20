@@ -68,6 +68,7 @@
   justify-content: center;
   text-align: center;
   color: white;
+  position: relative;
 
   .hp-josefine_bold {
     font-family: "JosefineBold", sans-serif;
@@ -187,6 +188,8 @@
   height: 83px;
   background-color: #5474fd;
   margin-top: -15px;
+  position: absolute;
+  bottom: 0;
 
   .nav-container {
     display: flex;
