@@ -599,24 +599,24 @@
 
     #burgermenu {
       display: block;
-      cursor: pointer;
+
       background-image: url(../assets/svg/burgermenu.svg);
       background-repeat: no-repeat;
       width: 10vw;
       height: 10vw;
       border: none;
+      z-index: 999;
     }
 
     #burgercross {
       display: none;
-      cursor: pointer;
+
       background-image: url(../assets/svg/burgercross.svg);
       background-repeat: no-repeat;
       width: 10vw;
       height: 10vw;
       border: none;
-
-      cursor: pointer;
+      z-index: 999;
     }
 
     .nav-container {
