@@ -3,17 +3,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const burgerCross = document.getElementById("burgercross");
   const navLinksBurger = document.querySelector(".nav-links_burger");
 
-  // burgerCross.style.display = "none";
+  // Initial state
+  burgerCross.style.display = "none";
 
   burgerMenu.addEventListener("click", () => {
-    navLinksBurger.style.display = "block";
-    burgerMenu.style.display = "none";
-    burgerCross.style.display = "block";
+    navLinksBurger.classList.add("active"); // Show the menu
+    navLinksBurger.classList.remove("hidden"); // Ensure it's not hidden
+    burgerMenu.style.display = "none"; // Hide the burger menu button
+    burgerCross.style.display = "block"; // Show the cross button
   });
 
   burgerCross.addEventListener("click", () => {
-    navLinksBurger.style.display = "none";
-    burgerMenu.style.display = "block";
-    burgerCross.style.display = "none";
+    navLinksBurger.classList.remove("active"); // Hide the menu
+    navLinksBurger.classList.add("hidden"); // Ensure it's hidden
+    burgerMenu.style.display = "block"; // Show the burger menu button
+    burgerCross.style.display = "none"; // Hide the cross button
   });
 });
